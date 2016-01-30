@@ -1,0 +1,20 @@
+{
+  "boss": true,
+  "esnext": true,
+  "eqnull": true,
+  "evil": true,
+  "expr": true,
+  "funcscope": true,
+  "loopfunc": true,
+  "node": true,
+  "quotmark": "single",
+  "shadow": true,
+  "undef": true,
+  "unused": "vars",
+
+  "globals": {
+    "Promise": true,
+    "describe": true,
+    "it": true
+  }
+}
