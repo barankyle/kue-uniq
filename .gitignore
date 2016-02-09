@@ -1,5 +1,6 @@
 artifacts/
 build/
+deploy/
 dist/
 
 node_modules
