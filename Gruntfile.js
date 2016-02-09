@@ -2,6 +2,26 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		package: grunt.file.readJSON('package.json'),
 
+		clean: {
+			deploy: 'deploy'
+		},
+
+		compress: {
+			main: {
+				options: {
+					archive: 'deploy/<%= package.name %>.tar.gz'
+				},
+				expand: true,
+				src: [
+					'lib/**/*',
+					'package.json',
+					'LICENSE',
+					'main.js'
+				],
+				dest: '<%= package.name %>'
+			}
+		},
+
 		jscs: {
 			all: {
 				options: {
