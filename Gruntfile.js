@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		jscs: {
 			all: {
 				options: {
-					config: 'config/jscs.json'
+					config: 'jscs.json'
 				},
 				src: [
 					'Gruntfile.js',
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 		jshint: {
 			all: {
 				options: {
-					jshintrc: 'config/jshint.json',
+					jshintrc: 'jshint.json',
 					reporter: require('jshint-stylish')
 				},
 				src: [
@@ -54,10 +54,10 @@ module.exports = function(grunt) {
 
 		jsonlint: {
 			jscs: {
-				src: 'config/jscs.json'
+				src: 'jscs.json'
 			},
 			jshint: {
-				src: 'config/jshint.json'
+				src: 'jshint.json'
 			},
 			package: {
 				src: 'package.json'
